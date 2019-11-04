@@ -12,13 +12,13 @@ class EditUserInfoAcvity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_user_info_acvity)
 
-        cancelBtn.setOnClickListener {
-            finish()
-        }
+            cancelBtn.setOnClickListener {
+                finish()
+            }
 
-        okBtn.setOnClickListener {
-            var name = nameEdt.text
-            var intent = Intent()
+            okBtn.setOnClickListener {
+                var name = nameEdt.text
+                var intent = Intent()
 
             intent.putExtra("inputName",nameEdt.text.toString())
             setResult(Activity.RESULT_OK,intent)
