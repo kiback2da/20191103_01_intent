@@ -62,6 +62,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        storeBtn.setOnClickListener {
+            var uri = Uri.parse("market://details?id=com.kakao.talk")
+            var intent = Intent(Intent.ACTION_VIEW,uri)
+            startActivity(intent)
+        }
+
     }
 
 
