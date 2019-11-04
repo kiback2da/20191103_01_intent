@@ -1,5 +1,6 @@
 package com.tjoeun.a20191103_01_intent
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -12,8 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         nameInputBtn.setOnClickListener {
 
-            var intent = intent(this,EditUserInfoAcvity,class::class.java)
-            startActivity(intent)
+            var intent = Intent(this,EditUserInfoAcvity::class.java)
+            startActivityForResult(intent,1000)
 
         }
 
