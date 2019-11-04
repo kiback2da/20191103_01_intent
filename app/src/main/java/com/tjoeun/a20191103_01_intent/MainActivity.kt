@@ -40,6 +40,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        phoneCallBtn.setOnClickListener {
+            /*var uri = Uri.parse("tel:01093686483") // 띄어쓰기 하면 안됨
+            var intent = Intent(Intent.ACTION_CALL,uri)
+            startActivity(intent)*/
+        }
+
     }
 
 
